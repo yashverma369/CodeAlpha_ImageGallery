@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery | CodeAlpha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Image Gallery</h1>
+    <p>Click any photo to open it in the lightbox</p>
+    <nav class="filters" id="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="nature">Nature</button>
+      <button class="filter" data-filter="city">City</button>
+      <button class="filter" data-filter="animals">Animals</button>
+      <button class="filter" data-filter="tech">Tech</button>
+    </nav>
+  </header>
+
+  <main class="gallery" id="gallery"></main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-btn close" id="close" aria-label="Close">&times;</button>
+    <button class="lb-btn prev" id="prev" aria-label="Previous">&#10094;</button>
+    <figure>
+      <img id="lb-img" src="" alt="">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-btn next" id="next" aria-label="Next">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
